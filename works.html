@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>noc92</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111111;
+      --muted: #6b7280;
+      --line: #eeeeee;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Gothic A1', sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+    }
+
+    /* Header */
+    header {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .brand {
+      font-weight: 600;
+    }
+
+    .menu a {
+      margin-left: 12px;
+      text-decoration: none;
+      color: var(--fg);
+      font-size: 14px;
+    }
+
+    /* Main */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 64px 16px;
+    }
+
+    /* Hero (profile 상단 톤과 맞춤) */
+    .hero {
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 12px 16px;
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    html {
+      overflow-y: scroll;
+    }
+
+
+    @media (max-width: 640px) {
+      .profile {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <strong>noc92</strong>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="/profile" aria-current="page">Profile</a>
+        <a href="/works">Works</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+    <main>
+      <section>
+        <a href="https://soundcloud.com/casual-friends/carmen?si=3d185bfeaca240bab01ab8b4ee0e6908&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><h2>Carmen</h2></a>
+        <span style="font-size:14px; color:var(--muted);">indie band "Casual Friends" demo</span>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1587826823&color=%23170e06&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/casual-friends" title="Casual Friends" target="_blank" style="color: #cccccc; text-decoration: none;">Casual Friends</a> · <a href="https://soundcloud.com/casual-friends/carmen" title="CARMEN" target="_blank" style="color: #cccccc; text-decoration: none;">CARMEN</a></div>
+      </section>
+      <section>
+        <a href="https://soundcloud.com/casual-friends/rain?si=067d3071492342b58fb211cc06440cf1&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><h2>Rain</h2></a>
+        <span style="font-size:14px; color:var(--muted);">indie band "Casual Friends" demo</span>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1587825419&color=%23170e06&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/casual-friends" title="Casual Friends" target="_blank" style="color: #cccccc; text-decoration: none;">Casual Friends</a> · <a href="https://soundcloud.com/casual-friends/rain" title="장마(Rain)" target="_blank" style="color: #cccccc; text-decoration: none;">장마(Rain)</a></div>
+      </section>
+      <section>
+        <a href="https://soundcloud.com/unruiw/20240620a1?si=001ca313c4044165b612f2ba3c86cbe3&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><h2>20240620</h2></a>
+        <span style="font-size:14px; color:var(--muted);">made for 2024-1 Electronic Music, Hanyang University.</span>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1910148182&color=%23170e06&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/unruiw" title="김민준" target="_blank" style="color: #cccccc; text-decoration: none;">김민준</a> · <a href="https://soundcloud.com/unruiw/20240620a1" title="20240620" target="_blank" style="color: #cccccc; text-decoration: none;">20240620</a></div>
+      </section>
+      <section>
+        <a href="https://soundcloud.com/unruiw/intro-flymetothemoon-live?si=e3eb64d9c17844098807ed2a2d939977&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><h2>intro+flymetothemoon (live)</h2></a>
+        <span style="font-size:14px; color:var(--muted);">performanced in Classical/Acoustic live performance</span>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1926174644&color=%23241c1b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/unruiw" title="김민준" target="_blank" style="color: #cccccc; text-decoration: none;">김민준</a> · <a href="https://soundcloud.com/unruiw/intro-flymetothemoon-live" title="intro+flymetothemoon (live)" target="_blank" style="color: #cccccc; text-decoration: none;">intro+flymetothemoon (live)</a></div>
+      </section>
+      <section>
+        <a href="https://soundcloud.com/unruiw/acimsoc?si=7fbcd156d3fb480fb77c4f0395b76417&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><h2>20241219</h2></a>
+        <span style="font-size:14px; color:var(--muted);">made for 2024-2 Electronic Music, Hanyang University.</span>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1991841531&color=%23170e06&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/unruiw" title="김민준" target="_blank" style="color: #cccccc; text-decoration: none;">김민준</a> · <a href="https://soundcloud.com/unruiw/acimsoc" title="20241219" target="_blank" style="color: #cccccc; text-decoration: none;">20241219</a></div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <span>© <span id="year"></span> noc92</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple client-side navigation placeholder (no page reload)
+    const links = document.querySelectorAll('.menu a');
+    links.forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href');
+        if (id && id.startsWith('#')) {
+          e.preventDefault();
+          document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

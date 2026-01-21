@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile · noc92</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111111;
+      --muted: #6b7280;
+      --line: #eeeeee;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Gothic A1', sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+    }
+
+    /* Header */
+    header {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .brand {
+      font-weight: 600;
+    }
+
+    .menu a {
+      margin-left: 12px;
+      text-decoration: none;
+      color: var(--fg);
+      font-size: 14px;
+    }
+
+    /* Main */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 32px 16px;
+    }
+
+    .profile {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .profile img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--line);
+    }
+
+    .profile h1 {
+      margin: 0 0 6px;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .profile p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    section {
+      margin-bottom: 28px;
+    }
+
+    section h2 {
+      margin: 0 0 8px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    section p {
+      margin: 4px 0;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    /* Hero (profile 상단 톤과 맞춤) */
+    .hero {
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 12px 16px;
+      font-size: 12px;
+    }
+
+    html {
+      overflow-y: scroll;
+    }
+
+    .label {
+      display: inline-block;
+      padding: .3em .4em .3em .4em;
+              font-size: 14px;
+              font-weight: bold;
+              line-height: 1.0;
+      color: #FFF;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            border-radius: .50em;
+    }
+
+    .label-musicology { background-color: #ffa600; }
+    .label-worldmusic { background-color: #6a2525; }
+    .label-independent { background-color: #2e83cd; }
+    .label-musichistory { background-color: #cf6400; }
+    .label-musicphilosophy { background-color: #009644; }
+
+    @media (max-width: 640px) {
+      .profile {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand">noc92</div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="/profile" aria-current="page">Profile</a>
+        <a href="/works">Works</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Profile header -->
+    <div class="profile">
+      <img src="/static/images/profile_phto.png">
+      <div>
+        <h1>Minjun Kim</h1>
+        <p>2003.05.24.</p>
+        <p>Sound Engineer, Musicologist, Guitarist, and Developer, based in Seoul.</p>
+      </div>
+    </div>
+
+    <section>
+      <h2>About</h2>
+      <p>I'm currently a student at the Department of Computer Software Engineering in Hanyang University. I am also majored at the Composition major since 2023. I've written musicology theses every semester about World Music and Independent music genres. I'm now studying Sound Engineering in Seoul Jazz Academy. I also do my works about Mixing/Mastering and Electronic/Band music.</p>
+      <p>As I have been involved in sound engineering and music production, I hope to study about AI-based sound engineering and music production methods. I also hope to research about AI genre analysis to utilize for musicology studies about unique genres.</p>
+    </section>
+
+    <hr>
+    <br>
+
+    <section>
+      <h2>Education</h2>
+      <p>
+        <strong>Sound Engineering Course, Seoul Jazz Academy, Seoul. (2025-)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">External Education</span>
+      </p>
+      <p>
+        <strong>Classical Composition Major, Hanyang University, Seoul. (2023-)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">Multiple Major</span>
+      </p>
+      <p>
+        <strong>Department of Computer Software Engineering, Hanyang University, Seoul. (2022-)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">Major</span>
+      </p>
+      <p>
+        <strong>Incheon Posco Academy (ICPA), Incheon. (2019-2022)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">High school</span>
+      </p>
+    </section>
+
+    <hr>
+    <br>
+
+    <section>
+      <h2>Techincal Skills</h2>
+      <p>
+        <span style="font-size:14px; color:var(--muted);">Proficient in</span> <strong>Python - Django, Tensorflow, etc.</strong>
+      </p>
+      <p>
+        <span style="font-size:14px; color:var(--muted);">Proficient in</span> <strong>C/C++</strong>
+      </p>
+      <p>
+        <span style="font-size:14px; color:var(--muted);">Proficient in</span> <strong>Ableton (DAW)</strong>
+      </p>
+      <p>
+        <span style="font-size:14px; color:var(--muted);">Proficient in</span> <strong>Pro Tool (DAW)</strong>
+      </p>
+      <p>
+        <span style="font-size:14px; color:var(--muted);">Proficient in</span> <strong>Classical/Acoustic/Electric Guitar</strong>
+      </p>
+      <p>
+        <span style="font-size:14px; color:var(--muted);">Experienced with</span> <strong>MAX/MSP, Supercollider</strong> 
+      </p>
+    </section>
+
+    <hr>
+    <br>
+
+    <section>
+      <h2>Papers</h2>
+      <p>
+        
+        <strong>The Generation of Lightness and Activity: Exploring the Forces of Korean Independent Music Culture (2025)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">Minjun Kim, Hyeonseok Kwon. presented at 2025-1 Musicology Major 3-minute-thesis(3MT), Hanyang University Music Reserch Center.</span>
+        <span class="label label-musicology">Musicology</span> <span class="label label-independent">Independent</span>
+        <span class="label label-musicphilosophy">Music Philosophy</span> <a href="/static/pdf/2025_1.pdf"><img src="/static/images/pdf.png" width="15px" style="vertical-align:text-top">Paper</a>
+      </p>
+      <p>
+        <strong>Korean Shoegaze Wave, Gazing after Defining Shoegaze (2024)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">Minjun Kim, Jiyoung Kang. presented at 2024-2 Musicology Major 3-minute-thesis(3MT), Hanyang University Music Reserch Center.</span>
+        <span class="label label-musicology">Musicology</span> <span class="label label-independent">Independent</span>
+        <span class="label label-musichistory">Music History</span> <a href="/static/pdf/2024_2.pdf"><img src="/static/images/pdf.png" width="15px" style="vertical-align:text-top">Paper</a>
+      </p>
+      <p>
+        <strong>The Paradox of Nuevo Tango: Piazzolla’s Art Music that Captivated the Public of New York (2024)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">Minjun Kim, Yi Eun Chung. presented at 2024-1 Musicology Major 3-minute-thesis(3MT), Hanyang University Music Reserch Center.</span>
+        <span class="label label-musicology">Musicology</span> <span class="label label-worldmusic">World Music</span> <a href="/static/pdf/2024_1.pdf"><img src="/static/images/pdf.png" width="15px" style="vertical-align:text-top">Paper</a>
+      </p>
+      <p>
+        <strong>The Life of Astor Piazzolla and the Transition of Instrumentation in Nuevo Tango per Period (2023)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">Minjun Kim, Heewon Chung. presented at 2023-2 Musicology Major 3-minute-thesis(3MT), Hanyang University Music Reserch Center.</span>
+        <span class="label label-musicology">Musicology</span> <span class="label label-worldmusic">World Music</span> <a href="/static/pdf/2023_2.pdf"><img src="/static/images/pdf.png" width="15px" style="vertical-align:text-top">Paper</a>
+      </p>
+    
+    </section>
+
+    <hr>
+    <br>
+
+    <section>
+      <h2>Projects (CS)</h2>
+      <p>
+        <strong>LLM-based Musician Recruitment Web Service (2025)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">participated as a Full-stack Developer. presented at 2025-1 Music in Industry 4.0, Hanyang University.</span> <a href="https://github.com/noc92/music-in-industry-4.0"><img src="/static/images/GitHub.png" width="15px" style="vertical-align:text-top">Link</a>
+      </p>
+      <p>
+        <strong>A Course-matching Application Service for Preserving Jeju Local Cuisine (2025)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">participated as a Backend Developer. presented at Goorm Hackathon in Jeju 14th, Goorm X Kakao.</span> <a href="https://9oormthon.goorm.io/1b34e699-7fb0-8067-8a05-d35745098138"><img src="/static/images/link.png" width="15px" style="vertical-align:text-top">Link</a>
+      </p>
+    </section>
+
+
+    <section>
+      <h2>Projects (Music)</h2>
+      <p>
+        <strong>Independent Band "Wrog in Fell" Demo Sequencing (2023-)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">participated as a Guitar Session, Sound Engineer, Arrangement.</span>
+      </p>
+      <p>
+        <strong>Independent Band "Casual Friends" Demo Recordings (2022-2023)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">participated as a Guitar Session.</span> <a href="https://soundcloud.com/casual-friends"><img src="/static/images/soundcloud.png" width="15px" style="vertical-align:text-top">SoundCloud</a>
+      </p>
+      <p>
+        <strong>Musician and Sound Engineer of Art Rock/Indie Band Genre (2026-)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">own music works.</span> <a href="https://soundcloud.com/unruiw"><img src="/static/images/soundcloud.png" width="15px" style="vertical-align:text-top">SoundCloud</a>
+      </p>
+    </section>
+
+    <hr>
+    <br>
+
+    <section>
+      <h2>Other Experiences</h2>
+      <p>
+        <strong>Just Synthesizeing Seminar, KT&G Sangsangmadang, Seoul. (2026-)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">lectured by Piano Shoegazer(Pishu).</span>
+      </p>
+      <p>
+        <strong>Daily Sound Engineering Seminar for DIY Band Musicians, Live Club BBang, Seoul. (2025)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">lectured by Piano Shoegazer(Pishu).</span>
+      </p>
+      <p>
+        <strong>Live Club Performances (2022-)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">indie band performance + externally planned performance + club regular performance.</span>
+      </p>
+      <p>
+        <strong>President of Central Band Club "SRGB", Hanyang University, Seoul. (2023-2024)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">president of the largest band club in Hanyang University.</span>
+      </p>
+      <p>
+        <strong>Vice President of Central Band Club "SRGB", Hanyang University, Seoul. (2023)</strong><br>
+        <span style="font-size:14px; color:var(--muted);">vice president of the largest band club in Hanyang University.</span>
+      </p>
+      <p>
+        President of Central Taekwondo Club "Hanyangharang", Hanyang University, Seoul. (2024)<br>
+        <span style="font-size:14px; color:var(--muted);">president of the only taekwondo club in Hanyang University.</span>
+      </p>
+      <p>
+        Tutoring (2022-)<br>
+        <span style="font-size:14px; color:var(--muted);">taught 17 students at offline, 15 students at online.</span>
+      </p>
+
+      <br>
+      <hr>
+      
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      © <span id="year"></span> noc92
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

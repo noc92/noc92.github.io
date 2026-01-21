@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>noc92</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111111;
+      --muted: #6b7280;
+      --line: #eeeeee;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Gothic A1', sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+    }
+
+    /* Header */
+    header {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .brand {
+      font-weight: 600;
+    }
+
+    .menu a {
+      margin-left: 12px;
+      text-decoration: none;
+      color: var(--fg);
+      font-size: 14px;
+    }
+
+    /* Main */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 64px 16px;
+    }
+
+    /* Hero (profile 상단 톤과 맞춤) */
+    .hero {
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 12px 16px;
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    html {
+      overflow-y: scroll;
+    }
+
+
+    @media (max-width: 640px) {
+      .profile {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <strong>noc92</strong>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="/profile" aria-current="page">Profile</a>
+        <a href="/works">Works</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+    <main>
+  <section style="margin-bottom:48px;">
+    <h1 style="font-size:22px; font-weight:600; margin-bottom:12px;">
+      Contact
+    </h1>
+    <p style="font-size:14px; color:var(--muted); margin:0;">
+      For collaborations, academic inquiries, or sound engineering work.
+    </p>
+  </section>
+
+  <section>
+    <ul style="list-style:none; padding:0; margin:0;">
+      <li style="margin-bottom:18px;">
+        <strong>Email</strong><br>
+        <span style="font-size:14px; color:var(--muted);">
+          noc92@hanyang.ac.kr
+        </span><br>
+        <span style="font-size:14px; color:var(--muted);">
+          0524mjsw@gmail.com
+        </span>
+      </li>
+
+      <li style="margin-bottom:18px;">
+        <strong>GitHub</strong><br>
+        <span style="font-size:14px; color:var(--muted);">
+          github.com/noc92
+        </span>
+      </li>
+
+      <li style="margin-bottom:18px;">
+        <strong>SoundCloud</strong><br>
+        <span style="font-size:14px; color:var(--muted);">
+          soundcloud.com/unruiw
+        </span>
+      </li>
+
+      <li>
+        <strong>Location</strong><br>
+        <span style="font-size:14px; color:var(--muted);">
+          Eunpyeong-gu, Seoul, South Korea
+        </span>
+      </li>
+    </ul>
+  </section>
+</main>
+
+
+    <footer>
+      <div class="footer-inner">
+        <span>© <span id="year"></span> noc92</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple client-side navigation placeholder (no page reload)
+    const links = document.querySelectorAll('.menu a');
+    links.forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href');
+        if (id && id.startsWith('#')) {
+          e.preventDefault();
+          document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
